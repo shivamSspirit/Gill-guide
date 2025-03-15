@@ -240,3 +240,17 @@ const transferTokensTx = await buildTransferTokensTransaction({
 Here, we use the `buildTransferTokensTransaction` builder method from Gill to transfer SPL tokens from Alice's token address to Bob's token address. We then sign the transaction, obtain the signature, and send it to the network. Here, the associated token account (ATA) is also auto-created for Bob's wallet for this mint.
 
 Congrats! You have transferred 9 OPOS tokens from Alice's token account to Bob's token account.
+
+## Run Your Code
+In your Terminal, type:
+
+```bash
+npx esrun ./index.ts
+```
+Upon successful execution, you should see an output of three Solana Explorer links for each operation: create, mint, and transfer of the 'OPOS' token.
+
+```bash
+https://explorer.solana.com/tx/58KC1GPc1f8aCUox6Pst7YheYRCqrQY9Np2gP6LfqDP5ogQjP5Hy76opzmJ8EKW2PyMdoGh71MYGWHL6oYHLAvdD
+https://explorer.solana.com/tx/4DXAFBfsAVCgZ3X3rwEZ72EN81JVWj2zpzsYERCu5xitf1aztuytn9og3cyNbNeR3t5KnaJgneNckFy6MGAoWLGr
+https://explorer.solana.com/tx/4PkHW9dSbQicKcempBoD3VCe2xQhJidJ6gptXPNvq4LVRBzJYAQrN5AGcaVfu88NabrczkgV8FrF4x1sVxKB7xSH
+```
